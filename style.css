@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gabarito&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,900&family=Roboto+Condensed&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+body,html{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./Image/image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+
+.container{
+    background-image: none;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.Time{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+#day, #hour, #minute, #second{
+    background-color: #ffffff;
+    color: black;
+    margin-top: 30px;
+    width: 70px;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 900;
+
+}
+
+@media only screen and (max-width: 483px) {
+    .container{
+        width: 90%;
+        margin: 10px;
+    }
+    .Time{
+        width: 100%;
+    }
+    #day, #hour, #minute, #second{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 365px){
+    .Time{
+        justify-content: center;
+        gap: 10%;
+    }
+
+}
